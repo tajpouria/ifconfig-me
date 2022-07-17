@@ -1,0 +1,39 @@
+{
+  "name": "ifconfig-me",
+  "version": "1.0.0",
+  "description": "Discovers your public IP address using pre-defined checkers (external services).",
+  "homepage": "https://github.com/tajpouria/ifconfig-me#readme",
+  "author": "Pouria Taj <tajpouria.dev@gmail.com> (https://tajpouria.com/)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc && cp package* README.md dist/"
+  },
+  "keywords": [
+    "get",
+    "ip",
+    "ipv4",
+    "ipv6",
+    "address",
+    "external",
+    "public",
+    "machine",
+    "fast",
+    "opendns",
+    "dns"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "isomorphic-fetch": "^3.0.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.1.6",
+    "@types/node": "^18.0.5",
+    "@types/node-fetch": "^3.0.2",
+    "jest": "^28.1.3",
+    "ts-jest": "^28.0.7"
+  }
+}
