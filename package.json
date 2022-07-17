@@ -1,6 +1,6 @@
 {
   "name": "ifconfig-me",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Discovers your public IP address using pre-defined checkers (external services).",
   "homepage": "https://github.com/tajpouria/ifconfig-me#readme",
   "author": "Pouria Taj <tajpouria.dev@gmail.com> (https://tajpouria.com/)",
