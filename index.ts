@@ -12,16 +12,6 @@ const qs: Promise<string>[] = [
     return js.ip;
   })(),
   (async (): Promise<string> => {
-    const res = await fetch("http://ip-api.com/json");
-    const js = (await res.json()) as { query: string };
-    return js.query;
-  })(),
-  (async (): Promise<string> => {
-    const res = await fetch("https://geolocation-db.com/json");
-    const js = (await res.json()) as { IPv4?: string; IPv6?: string };
-    return (js.IPv4 || js.IPv6) as string;
-  })(),
-  (async (): Promise<string> => {
     const res = await fetch("https://icanhazip.com");
     const js = (await res.text()) as string;
     return js as string;
