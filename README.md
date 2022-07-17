@@ -5,7 +5,7 @@ Discovers your public IP address using pre-defined checkers (external services).
 ## Install
 
 ```sh
-npm install public-ip
+npm install ifconfig-me
 ```
 
 ## Usage
