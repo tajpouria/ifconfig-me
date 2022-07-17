@@ -1,6 +1,6 @@
 import "isomorphic-fetch";
 
-const qs: Promise<string>[] = [
+export const _qs: Promise<string>[] = [
   (async (): Promise<string> => {
     const res = await fetch("https://api64.ipify.org?format=json");
     const js = (await res.json()) as { ip: string };
@@ -24,7 +24,7 @@ const firstOf = (ps: Promise<any>[]) => invert(Promise.all(ps.map(invert)));
 export default async (): Promise<string | null> => {
   let ip: string | null = null;
   try {
-    ip = (await firstOf(qs)) as string;
+    ip = (await firstOf(_qs)) as string;
   } catch (error) {
     console.error(
       `(ifconfig-me::FATAL): All IP check queries failed: '${error}'`,
